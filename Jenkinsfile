@@ -35,7 +35,6 @@ node {
     }
 
     stage("Deploy"){
-        sh 'whoami'
-        sh 'ssh builder@188.226.165.87 "./deploy.sh ${BUILD_NUMBER} mikkeldjurhuus"'
+        sh 'ssh builder@188.226.179.70 "./deploy.sh ${BUILD_NUMBER} mikkeldjurhuus"'
     }
 }
