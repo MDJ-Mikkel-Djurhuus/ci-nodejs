@@ -35,6 +35,6 @@ node {
     }
 
     stage("Deploy"){
-        sh 'ssh builder@188.226.165.87 "ls"'
+        sh 'ssh builder@188.226.165.87 "./deploy.sh ${BUILD_NUMBER} mikkeldjurhuus"'
     }
 }
