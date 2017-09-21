@@ -36,6 +36,6 @@ node {
 
     stage("Deploy"){
         sh 'ssh builder@188.226.165.87'
-        sh 'echo "TESTING"'
+        sh 'echo $(ls)'
     }
 }
