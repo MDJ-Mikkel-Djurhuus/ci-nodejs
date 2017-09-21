@@ -33,4 +33,8 @@ node {
             app.push("latest")
         }
     }
+
+    stage("Deploy"){
+        ssh builder@188.226.165.87 ".deploy ${BUILD_NUMBER} mikkeldjurhuus"
+    }
 }
