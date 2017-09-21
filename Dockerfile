@@ -1,4 +1,4 @@
-FROM node:argon
+FROM node:alpine
 
 # set maintainer
 LABEL maintainer "mikkel.djurhuus@gmail.com"
